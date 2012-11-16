@@ -1,0 +1,48 @@
+README policyd-spf-fs
+----------------------
+
+This is a policy daemon for checking SPF records in postfix. It is based on
+the spfquery command line tool from libspf2.
+
+Requirements
+------------
+libspf2 >= 1.2.5
+
+Compilation
+-----------
+Should be straight forward, just type "make"
+
+With "make install" the policy daemon will be installed in /usr/local/sbin
+
+Installation
+------------
+
+Add the following to master.cf
+
+# Policy daemon for SPF
+spf-policy  unix  -       n       n       -       -       spawn
+        user=nobody argv=/usr/local/sbin/policyd-spf-fs --debug=1
+
+
+And this to main.cf
+
+smtpd_sender_restrictions =
+   your policy here
+   ...
+   reject_unknown_sender_domain
+   reject_unverified_sender
+   check_policy_service unix:private/spf-policy
+
+Be sure to have SPF after reject_unverified_sender else you will probably
+get an open relay!
+
+Tuning
+------
+
+Under high load it is important, that the maxproc parameter (the last before
+spawn) matches the amount of smtpd which can make requests the the policyd,
+else you will get service unavailable in your log.
+
+
+--------
+$Id: README 14 2007-09-03 07:25:32Z cramer $

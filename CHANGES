@@ -1,0 +1,148 @@
+------------------------------------------------------------------------
+r27 | cramer | 2007-09-11 13:06:29 +0200 (Tue, 11 Sep 2007) | 3 lines
+
+Removed unused usage() function
+fixed typo in version()
+
+------------------------------------------------------------------------
+r26 | cramer | 2007-09-11 13:02:20 +0200 (Tue, 11 Sep 2007) | 2 lines
+
+Added Rev propperty
+
+------------------------------------------------------------------------
+r25 | cramer | 2007-09-11 12:59:09 +0200 (Tue, 11 Sep 2007) | 3 lines
+
+Modified manpage
+Added revision information to --version
+
+------------------------------------------------------------------------
+r24 | cramer | 2007-09-11 12:30:28 +0200 (Tue, 11 Sep 2007) | 4 lines
+
+- Added man page
+- Modified Makefile to be better pakable
+- Changed --help output to have two dashes (-) in front og the options
+
+------------------------------------------------------------------------
+r23 | cramer | 2007-09-11 08:56:53 +0200 (Tue, 11 Sep 2007) | 2 lines
+
+Made Makefile more generic ... preparation for packaging
+
+------------------------------------------------------------------------
+r22 | cramer | 2007-09-07 10:39:16 +0200 (Fri, 07 Sep 2007) | 2 lines
+
+Reject message to postfix is now more verbose, so that debuging for remote postmaster should be easyer.
+
+------------------------------------------------------------------------
+r21 | cramer | 2007-09-03 15:11:18 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+added install_restart target
+
+------------------------------------------------------------------------
+r20 | cramer | 2007-09-03 15:10:13 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Only print local hostname on debug > 1
+
+------------------------------------------------------------------------
+r19 | cramer | 2007-09-03 15:04:41 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Less debug output ...
+
+------------------------------------------------------------------------
+r18 | cramer | 2007-09-03 14:54:42 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Better Debug Output ...
+
+------------------------------------------------------------------------
+r17 | cramer | 2007-09-03 14:41:38 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Shorter debug output for level 1 debug (1 line)
+
+------------------------------------------------------------------------
+r16 | cramer | 2007-09-03 11:32:31 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Added TODO file
+
+------------------------------------------------------------------------
+r15 | cramer | 2007-09-03 11:22:42 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Disabled 2MX Code ... does wierd things
+
+------------------------------------------------------------------------
+r14 | cramer | 2007-09-03 09:25:32 +0200 (Mon, 03 Sep 2007) | 3 lines
+
+Added Tuning section
+Spellchecked the file
+
+------------------------------------------------------------------------
+r13 | cramer | 2007-09-03 08:41:52 +0200 (Mon, 03 Sep 2007) | 2 lines
+
+Cheched for eof on stdin
+
+------------------------------------------------------------------------
+r12 | cramer | 2007-08-31 10:47:59 +0200 (Fri, 31 Aug 2007) | 4 lines
+
+Modified Copyright header
+Added COPYING file
+Updated README
+
+------------------------------------------------------------------------
+r11 | cramer | 2007-08-31 10:32:01 +0200 (Fri, 31 Aug 2007) | 2 lines
+
+RENAMED missleading Macro FAIL_OK to EXIT_OK
+
+------------------------------------------------------------------------
+r10 | cramer | 2007-08-31 09:58:20 +0200 (Fri, 31 Aug 2007) | 4 lines
+
+Changed Default explanation to point directly to openspf instead to pobox
+Deamon now finds out the hostname of the server it is running on
+recipient is now parsed from postfix and added to structure for spf querry
+
+------------------------------------------------------------------------
+r9 | cramer | 2007-08-30 22:42:36 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Changed resolt to 0 when io get's closed, this is normal when postfix terminates the policy daemon
+
+------------------------------------------------------------------------
+r8 | cramer | 2007-08-30 22:25:27 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Added serval robustness routines to avoid sigsegv
+
+------------------------------------------------------------------------
+r7 | cramer | 2007-08-30 22:24:57 +0200 (Thu, 30 Aug 2007) | 4 lines
+
+Added install targed
+Cleaned up old targets
+Added Makefile to dependencies
+
+------------------------------------------------------------------------
+r6 | cramer | 2007-08-30 21:16:30 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Enhanced Makefile
+
+------------------------------------------------------------------------
+r5 | cramer | 2007-08-30 21:02:53 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Various bugfixes and logging changes, seams now to work quite well
+
+------------------------------------------------------------------------
+r4 | cramer | 2007-08-30 19:11:27 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Added README file
+
+------------------------------------------------------------------------
+r3 | cramer | 2007-08-30 17:51:57 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Added id svn propset svn:keywords 'Id'
+
+------------------------------------------------------------------------
+r2 | cramer | 2007-08-30 17:50:05 +0200 (Thu, 30 Aug 2007) | 3 lines
+
+Added id's
+Added clean rule in Makefile
+
+------------------------------------------------------------------------
+r1 | cramer | 2007-08-30 17:46:50 +0200 (Thu, 30 Aug 2007) | 2 lines
+
+Initial Import
+
+------------------------------------------------------------------------

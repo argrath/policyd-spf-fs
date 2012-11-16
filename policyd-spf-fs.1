@@ -1,0 +1,67 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH POLICYD-SPF-FS 1 "September 11, 2007"
+.SH NAME
+policyd-spf-fs \- policy daemon for postfix to check spf records
+.SH SYNOPSIS
+.B policyd-spf-fs
+.RI [ options ]
+.SH DESCRIPTION
+This manual page documents briefly the
+.B policyd-spf-fs
+command.
+.PP
+\fBpolicyd-spf-fs\fP is a policy daemon for postfix to check spf records
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+For a complete description, see the Info files.
+.TP
+.B \-\-help
+Show summary of options.
+.TP
+.B \-\-version
+Show version of program.
+.TP
+.B \-\-debug [debug level]
+debug level.
+.TP
+.B \-\-local <SPF mechanisms>
+Local policy for whitelisting.
+.TP
+.B \-\-trusted <0|1>
+Should trusted-forwarder.org be checked?
+.TP
+.B \-\-guess <SPF mechanisms>
+Default checks if no SPF record is found.
+.TP
+.B \-\-default-explanation <str>
+Default explanation string to use.
+.TP
+.B \-\-max-lookup <number>
+Maximum number of DNS lookups to allow
+.TP
+.B \-\-sanitize <0|1>
+Clean up invalid characters in output?
+.TP
+.B \-\-name <domain name>
+The name of the system doing the SPF checking
+.TP
+.B \-\-override <...>
+Override SPF records for domains
+.TP
+.B \-\-fallback <...>
+Fallback SPF records for domains
+
+.SH SEE ALSO
+.BR
+SPF RFC 4408,
+.BR
+Postfix SMTP Access Policy Delegation http://www.postfix.org/SMTPD_POLICY_README.html.
+.br
+.SH AUTHOR
+policyd-spf-fs was written by Matthias Cramer, <cramer@freestone.net>
+
+
+        
+
