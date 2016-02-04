@@ -56,7 +56,6 @@
 #include <string.h>	   /* strstr / strdup */
 #include <sys/socket.h>   /* inet_ functions / structs */
 #include <netinet/in.h>   /* inet_ functions / structs */
-#include <arpa/nameser.h> /* DNS HEADER struct */
 #include <arpa/inet.h>	/* in_addr struct */
 #include <getopt.h>
 #include <syslog.h>
